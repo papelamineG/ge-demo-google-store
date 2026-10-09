@@ -1,0 +1,1 @@
+Individual customer hardware purchase orders, shipping destinations, courier tracking, and dispatch statuses on Google Store Europe. Rows: 119. Coverage: `order_placed_at` 2026-08-26 -> 2026-09-17; `promised_delivery_date` 2026-08-29 -> 2026-09-22

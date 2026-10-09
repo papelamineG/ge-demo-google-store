@@ -1,0 +1,1 @@
+Warranty return authorizations, hardware defect diagnostics, and service center triage logs for Google Store devices. Rows: 35. Coverage: `incident_date` 2026-09-02 -> 2026-09-18

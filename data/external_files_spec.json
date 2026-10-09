@@ -1,0 +1,286 @@
+{
+  "style": {
+    "company": "Google Store",
+    "doc_type": "Hardware Quality & Logistics Audit",
+    "primary_color": "#1a73e8",
+    "font_family": "Helvetica"
+  },
+  "pdf": {
+    "title": "Google Store - Asian Display Assembly Quality Audit Report (Lot DISP-P11-904)",
+    "sections": [
+      {
+        "heading": "1. Executive Summary & Audit Scope",
+        "content": "This audit covers factory acceptance testing for 50,000 Super Actua OLED display assemblies manufactured for Google Pixel 11 Pro (SKU-PX11P-256-OBS) at the Tainan assembly plant between August 1 and August 25, 2026. Shipments were consigned to European Central Distribution (Tilburg, Netherlands)."
+      },
+      {
+        "heading": "2. High-Frequency Micro-Flicker Anomaly & Calibration Variance",
+        "content": "During secondary quality inspection at the factory gate, display sub-lot DISP-P11-904 exhibited an 8.4% variance in pulse-width modulation (PWM) frequency stability below 30% display brightness. While factory automated test equipment (ATE) initially logged a 1.2% minor variance, European repair center (B2X Frankfurt) intake records report a verified failure rate of 9.6% on European customer preorders."
+      },
+      {
+        "heading": "3. Cross-Source Reconciliation & Recommended Actions",
+        "content": "1. Quarantine remaining factory inventory of display lot DISP-P11-904.\n2. Reconcile internal RMA tickets (RMA-2026-0401 through RMA-2026-0410) against factory calibration serial logs.\n3. Accelerate firmware patch release OT-P11-26.2 to adjust low-light PWM duty cycle.\n4. Proactively grant \u20ac50 Google Store promotional credits to affected Tier-1 preorder customers."
+      }
+    ],
+    "discrepancy": {
+      "heading": "Factory vs. European DC Intake Reconciliation (Display Lot DISP-P11-904)",
+      "table_data": [
+        [
+          "Component Lot ID",
+          "Assembly Line",
+          "Factory ATE Variance",
+          "European DC Verified Defect Rate",
+          "Discrepancy Status"
+        ],
+        [
+          "DISP-P11-901",
+          "Line A-1",
+          "0.4%",
+          "0.6%",
+          "CONFIRMED_NOMINAL"
+        ],
+        [
+          "DISP-P11-902",
+          "Line A-2",
+          "0.5%",
+          "0.7%",
+          "CONFIRMED_NOMINAL"
+        ],
+        [
+          "DISP-P11-903",
+          "Line B-1",
+          "0.8%",
+          "1.1%",
+          "CONFIRMED_NOMINAL"
+        ],
+        [
+          "DISP-P11-904",
+          "Line B-3",
+          "1.2%",
+          "9.6% (mismatch)",
+          "FLAGGED_CRITICAL_VARIANCE"
+        ],
+        [
+          "DISP-P11-905",
+          "Line C-1",
+          "0.6%",
+          "0.8%",
+          "CONFIRMED_NOMINAL"
+        ]
+      ]
+    }
+  },
+  "excel": {
+    "title": "Google Store - DHL Express & DPD European Carrier Exception Ledger",
+    "kpis": [
+      {
+        "label": "Consignments Tracked",
+        "value": "85"
+      },
+      {
+        "label": "Customs Exception Rate",
+        "value": "14.1%"
+      },
+      {
+        "label": "Pending Release Orders",
+        "value": "12"
+      },
+      {
+        "label": "At-Risk Preorder Revenue",
+        "value": "\u20ac48,200"
+      }
+    ],
+    "headers": [
+      "Order_Reference",
+      "Tracking_Number",
+      "Destination_Country",
+      "Courier_Partner",
+      "Manifest_Status",
+      "Exception_Reason",
+      "Action_Required"
+    ],
+    "rows": [
+      [
+        "ORD-2026-8701",
+        "DHL-8701-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "UN3481 Lithium battery safety paperwork discrepancy at Brussels Air Hub",
+        "Submit amended dangerous goods declaration"
+      ],
+      [
+        "ORD-2026-8702",
+        "DHL-8702-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "UN3481 Lithium battery safety paperwork discrepancy at Brussels Air Hub",
+        "Submit amended dangerous goods declaration"
+      ],
+      [
+        "ORD-2026-8703",
+        "DHL-8703-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "Pallet dimension mismatch on consolidation manifest",
+        "Issue re-manifesting order"
+      ],
+      [
+        "ORD-2026-8704",
+        "DPD-8704-EU",
+        "France (FR)",
+        "DPD Europe",
+        "IN_TRANSIT",
+        "Cleared Roissy hub; out for delivery today",
+        "Normal monitoring"
+      ],
+      [
+        "ORD-2026-8706",
+        "DHL-8706-EU",
+        "Germany (DE)",
+        "DHL Express",
+        "DELIVERED",
+        "Delivered to customer reception with signed POD",
+        "Completed"
+      ],
+      [
+        "ORD-2026-8707",
+        "DHL-8707-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "UN3481 Lithium battery safety paperwork discrepancy at Brussels Air Hub",
+        "Submit amended dangerous goods declaration"
+      ],
+      [
+        "ORD-2026-8710",
+        "DHL-8710-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "Held at Madrid Barajas sorting facility",
+        "Priority courier clearance requested"
+      ],
+      [
+        "ORD-2026-8712",
+        "DHL-8712-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "ESCALATED",
+        "Customer reported damaged outer carton and screen defect",
+        "Initiate RMA return and courier insurance claim"
+      ],
+      [
+        "ORD-2026-8715",
+        "DPD-8715-EU",
+        "France (FR)",
+        "DPD Europe",
+        "DELIVERED",
+        "Delivered to parcel locker",
+        "Completed"
+      ],
+      [
+        "ORD-2026-8720",
+        "UPS-8720-EU",
+        "Italy (IT)",
+        "UPS",
+        "IN_TRANSIT",
+        "On vehicle for delivery in Milan",
+        "Normal monitoring"
+      ],
+      [
+        "ORD-2026-8728",
+        "DHL-8728-EU",
+        "UK",
+        "DHL Express",
+        "DELIVERED",
+        "Delivered with signature",
+        "Completed"
+      ],
+      [
+        "ORD-2026-8735",
+        "DHL-8735-EU",
+        "Spain (ES)",
+        "DHL Express",
+        "CUSTOMS_HOLD",
+        "UN3481 Lithium battery safety paperwork discrepancy at Brussels Air Hub",
+        "Submit amended dangerous goods declaration"
+      ]
+    ]
+  },
+  "scans": [
+    {
+      "title": "Google Store - B2X European Service Center Hardware Diagnostic Intake",
+      "doc_no": "B2X-FRA-2026-0902-RMA",
+      "date": "2026-09-02",
+      "headers": [
+        "Item",
+        "Device Serial / IMEI",
+        "Reported Customer Defect",
+        "Laboratory Diagnostic Finding",
+        "Triage Disposition"
+      ],
+      "rows": [
+        [
+          "1",
+          "IMEI-35829104882101",
+          "Severe screen flicker below 30% brightness",
+          "Confirmed PWM pulse instability. Hardware linked to lot DISP-P11-904.",
+          "Warranty Replacement Approved"
+        ],
+        [
+          "2",
+          "IMEI-35829104882144",
+          "Lock screen green flash on ambient display",
+          "High frequency flicker detected on optical photodiode sensor. Lot DISP-P11-904.",
+          "Warranty Replacement Approved"
+        ],
+        [
+          "3",
+          "IMEI-35829104882199",
+          "Display flashing when opening Camera app",
+          "Panel voltage drop under high peak brightness burst. Lot DISP-P11-904.",
+          "Warranty Replacement Approved"
+        ]
+      ],
+      "is_discrepancy": true
+    },
+    {
+      "title": "Google Store - CTDI Wearables Quality Assurance Certification",
+      "doc_no": "CTDI-MAD-2026-0904-QA",
+      "date": "2026-09-04",
+      "headers": [
+        "Item",
+        "Device Serial Number",
+        "Inspected Sub-system",
+        "Test Metric",
+        "Certification Result"
+      ],
+      "rows": [
+        [
+          "1",
+          "SN-PW5-8829104-ES",
+          "Pixel Watch 5 Ceramic Bio-Sensor Gasket",
+          "Hydrostatic 5ATM Pressure Seal",
+          "Seal Failure - Moisture Ingress"
+        ],
+        [
+          "2",
+          "SN-PW5-8810294-DE",
+          "Pixel Watch 5 Linear Haptic Resonator",
+          "Resonant Frequency 180Hz",
+          "Certified Nominal Pass"
+        ],
+        [
+          "3",
+          "SN-PBP3-991204-FR",
+          "Pixel Buds Pro 3 Acoustic Chamber",
+          "Noise Isolation Curve 42dB",
+          "Certified Nominal Pass"
+        ]
+      ],
+      "is_discrepancy": false
+    }
+  ]
+}

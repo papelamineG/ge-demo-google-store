@@ -1,0 +1,42 @@
+[
+  {
+    "name": "sku_id",
+    "type": "STRING",
+    "description": "Unique Google hardware product SKU code (PK, e.g. SKU-PX11P-256-OBS)"
+  },
+  {
+    "name": "product_name",
+    "type": "STRING",
+    "description": "Commercial product model name (e.g. Pixel 11 Pro 256GB Obsidian)"
+  },
+  {
+    "name": "product_family",
+    "type": "STRING",
+    "description": "Hardware category (Pixel Smartphone, Pixel Watch, Audio, Smart Home, Accessories)"
+  },
+  {
+    "name": "color_finish",
+    "type": "STRING",
+    "description": "Factory colorway and finish (Obsidian, Porcelain, Hazel, Lemongrass)"
+  },
+  {
+    "name": "storage_capacity",
+    "type": "STRING",
+    "description": "Internal storage capacity or size (128GB, 256GB, 512GB, 1TB, 41mm, 45mm)"
+  },
+  {
+    "name": "msrp_eur",
+    "type": "FLOAT",
+    "description": "Official retail launch price in Euro (EUR \u20ac)"
+  },
+  {
+    "name": "warranty_months",
+    "type": "INTEGER",
+    "description": "Standard manufacturer hardware warranty duration in months"
+  },
+  {
+    "name": "launch_tier",
+    "type": "STRING",
+    "description": "Product launch priority tier (Tier 1 Priority, General Availability)"
+  }
+]

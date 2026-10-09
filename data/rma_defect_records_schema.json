@@ -1,0 +1,62 @@
+[
+  {
+    "name": "rma_id",
+    "type": "STRING",
+    "description": "Return Merchandise Authorization identifier (PK, e.g. RMA-2026-0401)"
+  },
+  {
+    "name": "order_id",
+    "type": "STRING",
+    "description": "Associated Google Store customer order (FK to customer_orders.order_id)"
+  },
+  {
+    "name": "sku_id",
+    "type": "STRING",
+    "description": "Hardware device SKU undergoing RMA evaluation (FK to products_catalog.sku_id)"
+  },
+  {
+    "name": "serial_number",
+    "type": "STRING",
+    "description": "Device IMEI number or hardware serial code"
+  },
+  {
+    "name": "incident_date",
+    "type": "TIMESTAMP",
+    "description": "Date and time when warranty return incident was logged"
+  },
+  {
+    "name": "defect_category",
+    "type": "STRING",
+    "description": "Diagnostic root defect category (OLED_MICRO_FLICKER, BATTERY_CALIBRATION_DRIFT, CERAMIC_SEAL_BREACH, HAPTIC_FEEDBACK_VARIANCE)"
+  },
+  {
+    "name": "defect_severity",
+    "type": "STRING",
+    "description": "Defect classification impact severity (LOW, MEDIUM, HIGH, CRITICAL)"
+  },
+  {
+    "name": "technician_diagnostic_summary",
+    "type": "STRING",
+    "description": "Authorized repair technician diagnostic findings and observations"
+  },
+  {
+    "name": "triage_status",
+    "type": "STRING",
+    "description": "Current RMA resolution stage (PENDING_TRIAGE, VERIFIED_HARDWARE_FAULT, REPLACEMENT_DISPATCHED, REFUND_CREDITED, REJECTED_CUSTOMER_DAMAGE)"
+  },
+  {
+    "name": "assigned_repair_center",
+    "type": "STRING",
+    "description": "Certified European repair center handling inspection (B2X Frankfurt, CTDI Madrid, CTDI Paris)"
+  },
+  {
+    "name": "refund_credit_eur",
+    "type": "FLOAT",
+    "description": "Processed financial compensation or Google Store goodwill voucher in Euro (\u20ac)"
+  },
+  {
+    "name": "customer_sentiment",
+    "type": "STRING",
+    "description": "Assessed customer emotional sentiment during ticket escalation (SATISFIED, NEUTRAL, ANXIOUS, FRUSTRATED)"
+  }
+]

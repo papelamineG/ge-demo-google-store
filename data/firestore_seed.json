@@ -1,0 +1,127 @@
+[
+  {
+    "id": "task-launch-backorder-01",
+    "data": {
+      "task_id": "task-launch-backorder-01",
+      "title": "Pixel 11 Pro 256GB Obsidian Launch Backorder at Tilburg DC",
+      "issue_type": "INVENTORY_DEFICIT_BACKORDER",
+      "risk_level": "CRITICAL",
+      "current_status": "PENDING_APPROVAL",
+      "workflow_state": "NEEDS_STOCK_REBALANCING",
+      "owning_department": "Fulfillment_Operations",
+      "target_sku": "SKU-PX11P-256-OBS",
+      "target_hub": "NL-TILBURG-01",
+      "deficit_units": 430,
+      "recommended_action": "Execute inter-hub emergency stock transfer of 450 units from Dublin Hub (IE-DUBLIN-02) to Tilburg DC (NL-TILBURG-01) via express air charter.",
+      "impact_eur": 515570.0,
+      "audit_trail": [
+        {
+          "timestamp": "2026-09-18T08:00:00Z",
+          "author": "system_monitoring_daemon",
+          "event": "SLA violation alert triggered for 430 customer preorders."
+        }
+      ]
+    }
+  },
+  {
+    "id": "task-rma-display-flicker-02",
+    "data": {
+      "task_id": "task-rma-display-flicker-02",
+      "title": "Display Flicker Defect Batch Triage on Lot DISP-P11-904",
+      "issue_type": "HARDWARE_QUALITY_DISCREPANCY",
+      "risk_level": "HIGH",
+      "current_status": "IN_PROGRESS",
+      "workflow_state": "SUPPLIER_AUDIT_RECONCILIATION",
+      "owning_department": "Quality_Engineering",
+      "target_sku": "SKU-PX11P-256-OBS",
+      "target_hub": "DE-FRANKFURT-01",
+      "affected_rma_count": 14,
+      "recommended_action": "Correlate factory QA audit report against B2X repair records, isolate lot DISP-P11-904, and auto-authorize priority hardware replacements with \u20ac50 Store Vouchers.",
+      "impact_eur": 16786.0,
+      "audit_trail": [
+        {
+          "timestamp": "2026-09-18T10:15:00Z",
+          "author": "b2x_quality_gateway",
+          "event": "14 display flicker defect intake slips verified with PWM variance."
+        }
+      ]
+    }
+  },
+  {
+    "id": "task-carrier-customs-hold-03",
+    "data": {
+      "task_id": "task-carrier-customs-hold-03",
+      "title": "DHL Express Customs Clearance Hold for 12 Madrid Preorder Consignments",
+      "issue_type": "LOGISTICS_TRANSIT_EXCEPTION",
+      "risk_level": "HIGH",
+      "current_status": "PENDING_APPROVAL",
+      "workflow_state": "CARRIER_ESCALATION_QUEUED",
+      "owning_department": "Logistics_Partnerships",
+      "target_sku": "MULTIPLE_LAUNCH_SKUS",
+      "target_hub": "ES-MADRID-01",
+      "held_orders": [
+        "ORD-2026-8701",
+        "ORD-2026-8702",
+        "ORD-2026-8703",
+        "ORD-2026-8707"
+      ],
+      "recommended_action": "Transmit corrected UN3481 lithium battery flight safety declarations to DHL Brussels Air Hub to release held consignments within 4 hours.",
+      "impact_eur": 48200.0,
+      "audit_trail": [
+        {
+          "timestamp": "2026-09-18T11:45:00Z",
+          "author": "dhl_edi_listener",
+          "event": "Customs exception code EX-LITH-3481 raised on shipment manifest."
+        }
+      ]
+    }
+  },
+  {
+    "id": "task-watch-seal-audit-04",
+    "data": {
+      "task_id": "task-watch-seal-audit-04",
+      "title": "Pixel Watch 5 Bio-Sensor Ceramic Seal Ingress Investigation",
+      "issue_type": "SUPPLIER_TOLERANCE_AUDIT",
+      "risk_level": "MEDIUM",
+      "current_status": "ANALYZING",
+      "workflow_state": "SAMPLE_INSPECTION",
+      "owning_department": "Quality_Engineering",
+      "target_sku": "SKU-PW5-45-LTE-OBS",
+      "target_hub": "ES-MADRID-01",
+      "affected_units": 3,
+      "recommended_action": "Audit acoustic leak tester logs from Compal assembly line 4 and recalibrate incoming ultrasonic inspection at Madrid hub.",
+      "impact_eur": 1497.0,
+      "audit_trail": [
+        {
+          "timestamp": "2026-09-18T13:20:00Z",
+          "author": "ctdi_intake_system",
+          "event": "RMA-2026-0403 sensor ingress verified under hydrostatic test."
+        }
+      ]
+    }
+  },
+  {
+    "id": "task-carrier-sla-penalty-05",
+    "data": {
+      "task_id": "task-carrier-sla-penalty-05",
+      "title": "DPD Europe Transit SLA Clawback Credit Calculation",
+      "issue_type": "COMMERCIAL_SLA_RECONCILIATION",
+      "risk_level": "LOW",
+      "current_status": "COMPLETED",
+      "workflow_state": "CREDIT_MEMO_POSTED",
+      "owning_department": "Finance_Operations",
+      "target_sku": "ALL_MODELS",
+      "target_hub": "NL-TILBURG-01",
+      "clawback_credit_eur": 12450.0,
+      "recommended_action": "Apply contractual SLA penalty of \u20ac25 per delayed parcel against DPD monthly billing statement.",
+      "impact_eur": 12450.0,
+      "audit_trail": [
+        {
+          "timestamp": "2026-09-17T17:00:00Z",
+          "author": "finance_reconciliation_bot",
+          "event": "Credit memo CM-2026-0917-DPD confirmed and posted to SAP."
+        }
+      ]
+    }
+  }
+]

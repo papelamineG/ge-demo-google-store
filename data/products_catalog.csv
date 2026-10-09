@@ -1,0 +1,23 @@
+sku_id,product_name,product_family,color_finish,storage_capacity,msrp_eur,warranty_months,launch_tier
+SKU-PX11-128-OBS,Pixel 11 128GB Obsidian,Pixel Smartphone,Obsidian,128GB,899.0,24,Tier 1 Priority
+SKU-PX11-256-POR,Pixel 11 256GB Porcelain,Pixel Smartphone,Porcelain,256GB,999.0,24,Tier 1 Priority
+SKU-PX11-256-LEM,Pixel 11 256GB Lemongrass,Pixel Smartphone,Lemongrass,256GB,999.0,24,Tier 1 Priority
+SKU-PX11P-256-OBS,Pixel 11 Pro 256GB Obsidian,Pixel Smartphone,Obsidian,256GB,1199.0,24,Tier 1 Priority
+SKU-PX11P-256-POR,Pixel 11 Pro 256GB Porcelain,Pixel Smartphone,Porcelain,256GB,1199.0,24,Tier 1 Priority
+SKU-PX11P-512-HAZ,Pixel 11 Pro 512GB Hazel,Pixel Smartphone,Hazel,512GB,1329.0,24,Tier 1 Priority
+SKU-PX11P-1TB-OBS,Pixel 11 Pro 1TB Obsidian,Pixel Smartphone,Obsidian,1TB,1589.0,24,Tier 1 Priority
+SKU-PX11PF-256-OBS,Pixel 11 Pro Fold 256GB Obsidian,Pixel Smartphone,Obsidian,256GB,1899.0,24,Tier 1 Priority
+SKU-PX11PF-512-POR,Pixel 11 Pro Fold 512GB Porcelain,Pixel Smartphone,Porcelain,512GB,2029.0,24,Tier 1 Priority
+SKU-PW5-41-BT-OBS,Pixel Watch 5 41mm Bluetooth/Wi-Fi Obsidian,Pixel Watch,Matte Black,41mm,399.0,24,Tier 1 Priority
+SKU-PW5-41-LTE-POR,Pixel Watch 5 41mm 4G LTE Porcelain,Pixel Watch,Polished Silver,41mm,449.0,24,Tier 1 Priority
+SKU-PW5-45-BT-HAZ,Pixel Watch 5 45mm Bluetooth/Wi-Fi Hazel,Pixel Watch,Matte Hazel,45mm,449.0,24,Tier 1 Priority
+SKU-PW5-45-LTE-OBS,Pixel Watch 5 45mm 4G LTE Obsidian,Pixel Watch,Matte Black,45mm,499.0,24,Tier 1 Priority
+SKU-PBP3-OBS,Pixel Buds Pro 3 Obsidian,Audio,Obsidian,Standard,249.0,24,Tier 1 Priority
+SKU-PBP3-POR,Pixel Buds Pro 3 Porcelain,Audio,Porcelain,Standard,249.0,24,Tier 1 Priority
+SKU-PBP3-WIN,Pixel Buds Pro 3 Wintergreen,Audio,Wintergreen,Standard,249.0,24,Tier 1 Priority
+SKU-NST-LRN-4G,Nest Learning Thermostat 4th Gen Polished Silver,Smart Home,Polished Silver,Standard,329.0,24,General Availability
+SKU-GTV-STR-4K,Google TV Streamer 4K Porcelain,Smart Home,Porcelain,32GB,119.0,24,General Availability
+SKU-CHG-45W-USB,45W USB-C Power Adapter White,Accessories,White,45W,39.0,12,General Availability
+SKU-CAS-PX11P-OBS,Pixel 11 Pro Protective Case Obsidian,Accessories,Obsidian,Standard,45.0,12,General Availability
+SKU-CAS-PX11P-POR,Pixel 11 Pro Protective Case Porcelain,Accessories,Porcelain,Standard,45.0,12,General Availability
+SKU-BND-PW5-ACT-OBS,Pixel Watch 5 Active Band Obsidian,Accessories,Obsidian,Active Sport,59.0,12,General Availability

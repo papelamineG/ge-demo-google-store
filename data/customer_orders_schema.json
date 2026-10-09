@@ -1,0 +1,67 @@
+[
+  {
+    "name": "order_id",
+    "type": "STRING",
+    "description": "Unique Google Store customer order number (PK, e.g. ORD-2026-8701)"
+  },
+  {
+    "name": "customer_id",
+    "type": "STRING",
+    "description": "Anonymized customer account identifier"
+  },
+  {
+    "name": "sku_id",
+    "type": "STRING",
+    "description": "Ordered hardware model SKU (FK to products_catalog.sku_id)"
+  },
+  {
+    "name": "order_placed_at",
+    "type": "TIMESTAMP",
+    "description": "Exact order placement timestamp"
+  },
+  {
+    "name": "promised_delivery_date",
+    "type": "DATE",
+    "description": "Customer SLA promised delivery date"
+  },
+  {
+    "name": "fulfillment_hub",
+    "type": "STRING",
+    "description": "Fulfillment center assigned to dispatch order (FK to hub_inventory.hub_code)"
+  },
+  {
+    "name": "destination_country",
+    "type": "STRING",
+    "description": "Destination country ISO code (ES, FR, DE, IT, UK)"
+  },
+  {
+    "name": "shipping_city",
+    "type": "STRING",
+    "description": "Destination shipping metropolitan city"
+  },
+  {
+    "name": "carrier_partner",
+    "type": "STRING",
+    "description": "Assigned parcel logistics courier (DHL Express, DPD Europe, UPS)"
+  },
+  {
+    "name": "tracking_number",
+    "type": "STRING",
+    "description": "Courier parcel tracking reference code"
+  },
+  {
+    "name": "order_status",
+    "type": "STRING",
+    "description": "Order fulfillment state (DELIVERED, SHIPPED, ALLOCATED, TRANSIT_DELAYED, PENDING_INSPECTION, ESCALATED_DISPUTE)"
+  },
+  {
+    "name": "total_paid_eur",
+    "type": "FLOAT",
+    "description": "Final customer transaction value in Euro (\u20ac)"
+  },
+  {
+    "name": "priority_flag",
+    "type": "STRING",
+    "description": "Customer service priority classification (STANDARD, HIGH_PRIORITY_VIP)"
+  }
+]

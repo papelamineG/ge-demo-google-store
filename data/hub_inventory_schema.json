@@ -1,0 +1,52 @@
+[
+  {
+    "name": "inventory_id",
+    "type": "STRING",
+    "description": "Inventory ledger identifier (PK, e.g. INV-1001)"
+  },
+  {
+    "name": "hub_code",
+    "type": "STRING",
+    "description": "Fulfillment center facility code (NL-TILBURG-01, IE-DUBLIN-02, DE-FRANKFURT-01, ES-MADRID-01)"
+  },
+  {
+    "name": "hub_name",
+    "type": "STRING",
+    "description": "Full logistics hub facility name"
+  },
+  {
+    "name": "country_code",
+    "type": "STRING",
+    "description": "Facility country ISO code (NL, IE, DE, ES)"
+  },
+  {
+    "name": "sku_id",
+    "type": "STRING",
+    "description": "Google Store hardware product SKU (FK to products_catalog.sku_id)"
+  },
+  {
+    "name": "on_hand_stock",
+    "type": "INTEGER",
+    "description": "Physical unit inventory count present in warehouse shelves"
+  },
+  {
+    "name": "reserved_preorders",
+    "type": "INTEGER",
+    "description": "Units allocated to pending customer preorders awaiting dispatch"
+  },
+  {
+    "name": "safety_threshold",
+    "type": "INTEGER",
+    "description": "Minimum safety buffer stock threshold. Calculation formula: safety_threshold = (Average Daily Dispatch Volume x Replenishment Lead Days) + Safety Buffer Margin. Set between 200 and 500 units depending on hub tier."
+  },
+  {
+    "name": "replenishment_lead_days",
+    "type": "INTEGER",
+    "description": "Estimated transit days required for stock replenishment from manufacturing source"
+  },
+  {
+    "name": "stock_status",
+    "type": "STRING",
+    "description": "Operational inventory health status governed by business rule: 'CRITICAL_BACKORDER' if (on_hand_stock - reserved_preorders < 0) [triggers immediate automated replenishment alert]; 'CONSTRAINED' if (on_hand_stock - reserved_preorders <= safety_threshold); 'HEALTHY' if buffer margin is satisfied. Valid enum values: HEALTHY, CONSTRAINED, CRITICAL_BACKORDER."
+  }
+]
